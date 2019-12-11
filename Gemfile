@@ -241,3 +241,5 @@ end
 gem 'webpush', require: false
 gem 'colored2', require: false
 gem 'maxminddb'
+gem 'dotenv-rails'
+gem 'ginjo-omniauth-slack', '2.4.0'
