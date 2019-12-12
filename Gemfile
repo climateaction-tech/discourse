@@ -243,3 +243,9 @@ gem 'colored2', require: false
 gem 'maxminddb'
 gem 'dotenv-rails'
 gem 'ginjo-omniauth-slack', '2.4.0'
+
+# Uberspace/Capistrano gems
+gem "capistrano", group: "development", require: false
+gem 'capistrano-uberspace', github: 'mamhoff/capistrano-uberspace', branch: 'master', group: :development
+gem 'capistrano-rails', require: false
+gem 'rb-inotify', '~> 0.9', group: "production"
