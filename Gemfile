@@ -245,7 +245,9 @@ gem 'dotenv-rails'
 gem 'ginjo-omniauth-slack', '2.4.0'
 
 # Uberspace/Capistrano gems
-gem "capistrano", group: "development", require: false
-gem 'capistrano-uberspace', github: 'mamhoff/capistrano-uberspace', branch: 'master', group: :development
-gem 'capistrano-rails', require: false
-gem 'rb-inotify', '~> 0.9', group: "production"
+group ::development do
+  gem "capistrano", require: false
+  gem 'capistrano-uberspace', github: 'mamhoff/capistrano-uberspace', branch: 'master'
+  gem 'capistrano-git-with-submodules', '~> 2.0', '>= 2.0.3'
+  gem 'capistrano-rails', require: false
+end
