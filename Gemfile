@@ -245,9 +245,13 @@ gem 'dotenv-rails'
 gem 'ginjo-omniauth-slack', '2.4.0'
 
 # Uberspace/Capistrano gems
-group ::development do
+group :development do
   gem "capistrano", require: false
   gem 'capistrano-uberspace', github: 'mamhoff/capistrano-uberspace', branch: 'master'
   gem 'capistrano-git-with-submodules', '~> 2.0', '>= 2.0.3'
   gem 'capistrano-rails', require: false
 end
+
+
+# Add error tracking
+gem 'airbrake'

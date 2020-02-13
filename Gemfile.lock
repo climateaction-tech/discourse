@@ -48,6 +48,9 @@ GEM
       zeitwerk (~> 2.2)
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
+    airbrake (4.3.8)
+      builder
+      multi_json
     airbrussh (1.4.0)
       sshkit (>= 1.6.1, != 1.7.0)
     annotate (3.0.3)
@@ -468,6 +471,7 @@ DEPENDENCIES
   activemodel (= 6.0.1)
   activerecord (= 6.0.1)
   activesupport (= 6.0.1)
+  airbrake
   annotate
   aws-sdk-s3
   aws-sdk-sns
